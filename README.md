@@ -102,7 +102,12 @@
 | GET | `/api/regions/{id}` | 특정 지역 정보 | `id` | `RegionDto` |
 | GET | `/api/regions/code/{code}` | 지역코드별 정보 | `code` | `RegionDto` |
 
-## 프로젝트 실제 화면
+## 프로젝트 UI 및 시연 영상
+
+### 시연 영상
+https://www.youtube.com/watch?v=0hXhYrfzDds
+
+
 | 메인 화면 | 메인 화면 2 | 날씨 지도 |
 |--------|--------|--------|
 |![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
