@@ -11,9 +11,10 @@
 | **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)|
 
 
+## 📊 데이터베이스 스키마 (ERD)
+
 ![ERD](https://ifh.cc/g/J5h9xt.jpg)
 
-## 📊 데이터베이스 스키마 (ERD)
 
 ```mermaid
 erDiagram
