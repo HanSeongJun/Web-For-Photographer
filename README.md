@@ -102,6 +102,10 @@
 | GET | `/api/regions/{id}` | 특정 지역 정보 | `id` | `RegionDto` |
 | GET | `/api/regions/code/{code}` | 지역코드별 정보 | `code` | `RegionDto` |
 
+## 프로젝트 실제 화면
+| 메인 화면 | 
+|--------|
+
 ## 🛠️ 설치 및 실행
 
 ### 1. 프로젝트 클론
