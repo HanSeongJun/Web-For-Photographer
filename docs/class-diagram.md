@@ -14,7 +14,7 @@ classDiagram
         +String profileImageUrl
         +LocalDateTime createdAt
         +LocalDateTime updatedAt
-        +getLikesCgit push -u origin +mainount()
+        +getLikesCount()
     }
     
     class Region {
@@ -397,7 +397,7 @@ classDiagram
     CommentService --> UserRepository
     RegionService --> RegionRepository
     
-    %% Entities
+    %% Entity Relationships
     User ||--o{ Post : "작성"
     User ||--o{ Comment : "작성"
     User ||--o{ PostLike : "좋아요"
