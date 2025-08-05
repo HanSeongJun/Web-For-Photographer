@@ -106,6 +106,11 @@
 | 메인 화면 | 메인 화면 2 | 날씨 지도 |
 |--------|--------|--------|
 |![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
+
+| 지역 명소 | 메인 화면 2 | 날씨 지도 |
+|--------|--------|--------|
+|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/NgSsY3.jpg)|![댓글](https://ifh.cc/g/SZHkS3.jpg)
+
 ## 🛠️ 설치 및 실행
 
 ### 1. 프로젝트 클론
@@ -163,10 +168,6 @@ spring.datasource.password=1234
 
 ### API 키 설정
 ```properties
-# 네이버 지도 API
-naver.client.id=your-naver-client-id
-naver.client.secret=your-naver-client-secret
-
 # 기상청 API
 weather.api.key=your-weather-api-key
 
