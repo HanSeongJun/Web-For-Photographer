@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # MySQL 데이터베이스
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: webfrophoto
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - webfrophto-network
+
+  # 백엔드 애플리케이션
+  backend:
+    build: .
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      DATABASE_URL: jdbc:mysql://mysql:3306/webfrophoto?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: password
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production
+      WEATHER_API_KEY: q73yaTldqjjaBgY9hUkXkd3lsTL84xOfD8BSm8yfaWtM64x8yc%2BrKzBc3N4sOFBnxYIKJHqpOp4QmC%2FtYGkqAA%3D%3D
+      AIR_QUALITY_API_KEY: q73yaTldqjjaBgY9hUkXkd3lsTL84xOfD8BSm8yfaWtM64x8yc%2BrKzBc3N4sOFBnxYIKJHqpOp4QmC%2FtYGkqAA%3D%3D
+      CORS_ALLOWED_ORIGINS: http://localhost:3000
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - webfrophto-network
+
+  # 프론트엔드 애플리케이션
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - webfrophto-network
+
+volumes:
+  mysql_data:
+
+networks:
+  webfrophto-network:
+    driver: bridge 
