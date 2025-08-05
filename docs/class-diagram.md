@@ -14,7 +14,7 @@ classDiagram
         +String profileImageUrl
         +LocalDateTime createdAt
         +LocalDateTime updatedAt
-        +getLikesCount()
+        +getLikesCgit push -u origin +mainount()
     }
     
     class Region {
