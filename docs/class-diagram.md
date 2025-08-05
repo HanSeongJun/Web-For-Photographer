@@ -397,16 +397,6 @@ classDiagram
     CommentService --> UserRepository
     RegionService --> RegionRepository
     
-    %% Entity Relationships
-    User ||--o{ Post : writes
-    User ||--o{ Comment : writes
-    User ||--o{ PostLike : likes
-    Region ||--o{ PhotoSpot : contains
-    Region ||--o{ WeatherData : has
-    PhotoSpot ||--o{ Post : has
-    Post ||--o{ Comment : has
-    Post ||--o{ PostLike : has
-    
     %% DTOs
     AuthController --> LoginRequest
     AuthController --> SignUpRequest
