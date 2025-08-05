@@ -105,7 +105,7 @@
 ## 프로젝트 실제 화면
 | 메인 화면 | 메인 화면 2 | 
 |--------|--------|
-
+| [main1](https://ifh.cc/g/RlRLTM.jpg) | [main2](https://ifh.cc/g/gKHjzA.png)| 
 ## 🛠️ 설치 및 실행
 
 ### 1. 프로젝트 클론
