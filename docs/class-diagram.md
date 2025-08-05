@@ -398,14 +398,14 @@ classDiagram
     RegionService --> RegionRepository
     
     %% Entity Relationships
-    User ||--o{ Post : "작성"
-    User ||--o{ Comment : "작성"
-    User ||--o{ PostLike : "좋아요"
-    Region ||--o{ PhotoSpot : "소속"
-    Region ||--o{ WeatherData : "날씨정보"
-    PhotoSpot ||--o{ Post : "게시글"
-    Post ||--o{ Comment : "댓글"
-    Post ||--o{ PostLike : "좋아요"
+    User ||--o{ Post : writes
+    User ||--o{ Comment : writes
+    User ||--o{ PostLike : likes
+    Region ||--o{ PhotoSpot : contains
+    Region ||--o{ WeatherData : has
+    PhotoSpot ||--o{ Post : has
+    Post ||--o{ Comment : has
+    Post ||--o{ PostLike : has
     
     %% DTOs
     AuthController --> LoginRequest
