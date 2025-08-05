@@ -107,9 +107,13 @@
 |--------|--------|--------|
 |![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
 
-| 지역 명소 | 메인 화면 2 | 날씨 지도 |
+| 지역별 명소 | 명소별 글 목록 | 글 내용 |
 |--------|--------|--------|
 |![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/NgSsY3.jpg)|![댓글](https://ifh.cc/g/SZHkS3.jpg)
+
+| 글쓰기 | 로그인 | 회원가입 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/KK6tGn.png) |![](https://ifh.cc/g/H3D5nj.png) |![](https://ifh.cc/g/fdQ6mN.png) |
 
 ## 🛠️ 설치 및 실행
 
