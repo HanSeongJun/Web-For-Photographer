@@ -114,7 +114,7 @@ https://www.youtube.com/watch?v=0hXhYrfzDds
 
 | 지역별 명소 | 명소별 글 목록 | 글 내용 |
 |--------|--------|--------|
-|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/NgSsY3.jpg)
+|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/6bzRtl.jpg)
 
 | 글쓰기 | 로그인 | 회원가입 |
 |--------|--------|--------|
