@@ -2,12 +2,45 @@
 
 포토스팟을 찾고, 공유하고, 날씨 정보를 확인할 수 있는 웹 애플리케이션입니다.
 
+---
+
 ## 🚀 기술 스택
 
 | **Frontend** |![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)|
 |------|------|
 | **Backend** | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white) ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)|
 | **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)|
+
+---
+
+## 📁 프로젝트 구조
+
+```
+Renew_WebForPhoto-main/
+├── frontend/                 # React 프론트엔드
+│   ├── src/
+│   │   ├── components/      # 재사용 가능한 컴포넌트
+│   │   ├── pages/          # 페이지 컴포넌트
+│   │   ├── services/       # API 서비스
+│   │   ├── types/          # TypeScript 타입 정의
+│   │   ├── utils/          # 유틸리티 함수
+│   │   └── context/        # React Context
+│   ├── public/             # 정적 파일
+│   └── package.json
+├── src/main/java/backend/WebFroPhto/
+│   ├── config/             # 설정 클래스
+│   ├── controller/         # REST API 컨트롤러
+│   ├── service/           # 비즈니스 로직
+│   ├── repository/        # 데이터 접근 계층
+│   ├── entity/           # JPA 엔티티
+│   └── dto/              # 데이터 전송 객체
+├── src/main/resources/    # 설정 파일
+├── docs/                 # 프로젝트 문서
+├── docker-compose.local.yml
+└── build.gradle
+```
+
+---
 
 
 ## 📊 데이터베이스 스키마 (ERD)
@@ -41,7 +74,27 @@
 ### 🗺️ 지도 기능
 - **네이버 지도**: 포토스팟 위치 표시
 - **지역 선택**: 시도/시군구 선택
-- **반응형 지도**: 모바일 친화적 UI
+
+--- 
+## 프로젝트 사용자 화면 및 시연 영상
+
+### 시연 영상
+https://www.youtube.com/watch?v=0hXhYrfzDds
+
+### 사용자 화면
+| 메인 화면 | 메인 화면 2 | 날씨 지도 |
+|--------|--------|--------|
+|![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
+
+| 지역별 명소 | 명소별 글 목록 | 글 내용 |
+|--------|--------|--------|
+|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/6bzRtl.jpg)
+
+| 글쓰기 | 로그인 | 회원가입 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/KK6tGn.png) |![](https://ifh.cc/g/H3D5nj.png) |![](https://ifh.cc/g/fdQ6mN.png) |
+
+---
 
 ## 📡 API 명세서
 
@@ -101,24 +154,6 @@
 | GET | `/api/regions/{id}` | 특정 지역 정보 | `id` | `RegionDto` |
 | GET | `/api/regions/code/{code}` | 지역코드별 정보 | `code` | `RegionDto` |
 
-## 프로젝트 사용자 화면 및 시연 영상
-
-### 시연 영상
-https://www.youtube.com/watch?v=0hXhYrfzDds
-
-### 사용자 화면
-| 메인 화면 | 메인 화면 2 | 날씨 지도 |
-|--------|--------|--------|
-|![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
-
-| 지역별 명소 | 명소별 글 목록 | 글 내용 |
-|--------|--------|--------|
-|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/6bzRtl.jpg)
-
-| 글쓰기 | 로그인 | 회원가입 |
-|--------|--------|--------|
-|![](https://ifh.cc/g/KK6tGn.png) |![](https://ifh.cc/g/H3D5nj.png) |![](https://ifh.cc/g/fdQ6mN.png) |
-
 ## 🛠️ 설치 및 실행
 
 ### 1. 프로젝트 클론
@@ -158,11 +193,6 @@ npm run dev
 
 프론트엔드는 `http://localhost:5173`에서 실행됩니다.
 
-### 5. Docker로 실행 (선택사항)
-```bash
-# Docker Compose로 전체 서비스 실행
-docker-compose -f docker-compose.local.yml up -d
-```
 
 ## 🔧 환경 설정
 
@@ -181,31 +211,4 @@ weather.api.key=your-weather-api-key
 
 # 환경공단 API
 air.api.key=your-air-quality-api-key
-```
-
-## 📁 프로젝트 구조
-
-```
-Renew_WebForPhoto-main/
-├── frontend/                 # React 프론트엔드
-│   ├── src/
-│   │   ├── components/      # 재사용 가능한 컴포넌트
-│   │   ├── pages/          # 페이지 컴포넌트
-│   │   ├── services/       # API 서비스
-│   │   ├── types/          # TypeScript 타입 정의
-│   │   ├── utils/          # 유틸리티 함수
-│   │   └── context/        # React Context
-│   ├── public/             # 정적 파일
-│   └── package.json
-├── src/main/java/backend/WebFroPhto/
-│   ├── config/             # 설정 클래스
-│   ├── controller/         # REST API 컨트롤러
-│   ├── service/           # 비즈니스 로직
-│   ├── repository/        # 데이터 접근 계층
-│   ├── entity/           # JPA 엔티티
-│   └── dto/              # 데이터 전송 객체
-├── src/main/resources/    # 설정 파일
-├── docs/                 # 프로젝트 문서
-├── docker-compose.local.yml
-└── build.gradle
 ```
