@@ -107,7 +107,7 @@
 ### 시연 영상
 https://www.youtube.com/watch?v=0hXhYrfzDds
 
-
+### 사용자 화면
 | 메인 화면 | 메인 화면 2 | 날씨 지도 |
 |--------|--------|--------|
 |![main](https://ifh.cc/g/RlRLTM.jpg) | ![main2](https://ifh.cc/g/gKHjzA.png)| ![map](https://ifh.cc/g/cdk7JG.png)
