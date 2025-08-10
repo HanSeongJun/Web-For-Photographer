@@ -102,7 +102,7 @@
 | GET | `/api/regions/{id}` | 특정 지역 정보 | `id` | `RegionDto` |
 | GET | `/api/regions/code/{code}` | 지역코드별 정보 | `code` | `RegionDto` |
 
-## 프로젝트 UI 및 시연 영상
+## 프로젝트 사용자 화면 및 시연 영상
 
 ### 시연 영상
 https://www.youtube.com/watch?v=0hXhYrfzDds
